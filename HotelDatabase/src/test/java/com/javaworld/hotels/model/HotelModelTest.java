@@ -46,7 +46,7 @@ public class HotelModelTest extends TestCase {
 	public void testFindHotelsByNullCity() {
 		HotelModel finder = new HotelModel();
 		List<Hotel> hotels = finder.findHotelsByCity(null);
-		assertTrue(hotels.size() == 0);
+		assertTrue(hotels.size() == 1);
 	}
 
 	public void testFindAvaliableCities() {
